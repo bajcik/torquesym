@@ -1,0 +1,15 @@
+<!ELEMENT car (engine?, gearbox?, differential?, rimm?, tire?, weight?)>
+<!ELEMENT engine (torque+)>
+<!ATTLIST engine minrpm CDATA #REQUIRED maxrpm CDATA #REQUIRED>
+<!ELEMENT torque EMPTY>
+<!ATTLIST torque value CDATA #REQUIRED>
+<!ELEMENT gearbox (gear+)>
+<!ELEMENT gear EMPTY>
+<!ATTLIST gear ratio CDATA #REQUIRED>
+<!ELEMENT differential EMPTY>
+<!ATTLIST differential ratio CDATA #REQUIRED>
+<!ELEMENT tire EMPTY>
+<!ATTLIST tire width CDATA #REQUIRED ratio CDATA #REQUIRED rim CDATA #REQUIRED>
+<!ELEMENT weight EMPTY>
+<!ATTLIST weight value CDATA #REQUIRED>
+
